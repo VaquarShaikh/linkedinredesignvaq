@@ -1,6 +1,11 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+// next.config.js
+module.exports = {
+  images: {
+    dangerouslyAllowSVG: true,
+    domains: ['rb.gy' , 'res.cloudinary.com'],
+  },
 }
 
-module.exports = nextConfig
+
+// module.exports = nextConfig
